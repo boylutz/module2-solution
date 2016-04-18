@@ -1,49 +1,64 @@
 
 /********** Base styles **********/
 * {
-  box-sizing: border-box;
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
 }
+
+body{
+  font-family: Helvetica;
+   border: none;
+  background-color: white;
+}
+
 h1 {
+  margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
 }
 
-p {
-  border: 1px solid black;
-  background-color: #A52A2A;
-  width: 90%;
-  height: 150px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
-
-}
-
 div {
+  padding: 10px;
   background-color: grey;
-  margin-left: auto;
-  margin-right: auto;
-  border: 1px solid black; 
-  margin: 10px;
+  border: 1px solid black;
+ }
+
+
+.section-title {
+  position: relative;
+  right: -10px;
+  top: -10px;
+  margin: 0px;
+  width: 100px;
+  text-align:  center;
 }
 
-.section-header {
-  text-align: right;
-  position: relative;
-  align-content: right;
+#idBeef {
+  background-color: green;
+}
+
+#idSushi {
+  background-color: blue;
+}
+
+#idChicken {
+  background-color: yellow;
 }
 
 /* Simple Responsive Framework. */
 .row {
   width: 100%;
+  border: none;
+  background-color: white;
 }
 
 /********** desktop devices **********/
 @media (min-width: 992px) {
   .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
     float: left;
-    border: 1px solid green;
+    background-color: white;
+    border: none;
   }
   .col-lg-1 {
     width: 8.33%;
@@ -87,7 +102,8 @@ div {
 @media (min-width: 768px) and (max-width: 991px) {
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
-    border: 1px solid green;
+    background-color: white;
+    border: none;
   }
   .col-md-1 {
     width: 8.33%;
@@ -130,7 +146,8 @@ div {
 @media (max-width: 767px) {
   .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
     float: left;
-    border: 1px solid green;
+     background-color: white;
+    border: none;
   }
   .col-sm-1 {
     width: 8.33%;
